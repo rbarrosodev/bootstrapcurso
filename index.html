@@ -8,11 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
 
     <title>Site do Rodrigo em Bootstrap 4</title>
   </head>
   <body>
+
+   <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
@@ -66,6 +71,8 @@
 
     </nav>
 
+    <!-- Carousel -->
+    
     <div id="carouselSite" class="carousel slide" data-ride="carousel" data-interval="3000">
       <ol class="carousel-indicators">
         <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
@@ -116,14 +123,18 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center my-5">
-          <h1 class="display-3">Lorem ipsum dolor</h1>
+          <h1 class="display-3"><i class="fab fa-xbox text-success"></i> Jogos</h1>
           <p>Aenean lacinia in ante ultrices pretium.</p>
         </div>
       </div>
     </div>
 
+    <!-- Scrollspy -->
+
+
     <div class="row mb-5">
-      <div class="col-3">
+
+      <div class="col-sm-6 col-md-4 mb-3">
         
         <nav id="navbarVertical" class="navbar navbar-light bg-light">
             <nav class="nav nav-pills flex-column">
@@ -143,7 +154,7 @@
 
       </div>
 
-      <div class="col-9">
+      <div class="col-sm-6 col-md-8">
         <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
           
           <h4 id="item1">Morbi eu mauris</h4>
@@ -190,11 +201,13 @@
 
     </div>
 
-    <div class="row mb-5">
-      
-      <div class="col-sm-4">
+    <!-- Cards -->
 
-        <div class="card">
+    <div class="row justify-content-sm-center">
+      
+      <div class="col-sm-6 col-md-4">
+
+        <div class="card mb-5">
           <img class="card-img-top" src="images/forza2.jpg">
           <div class="card-body">
             <h4 class="card-title">Forza Horizon 4</h4>
@@ -218,9 +231,9 @@
 
       </div>
       
-      <div class="col-sm-4">
+      <div class="col-sm-6 col-md-4">
 
-        <div class="card">
+        <div class="card mb-5">
           <img class="card-img-top" src="images/fifa2.jpg">
           <div class="card-body">
             <h4 class="card-title">FIFA 20</h4>
@@ -244,9 +257,9 @@
 
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-sm-6 col-md-4">
 
-        <div class="card">
+        <div class="card mb-5">
           <img class="card-img-top" src="images/mw2.jpg">
           <div class="card-body">
             <h4 class="card-title">Call of Duty Modern Warfare</h4>
@@ -259,7 +272,7 @@
             <li class="list-group-item">Class aptent taciti</li>
           </ul>
           <div class="card-body">
-            <a href="#" class="card-link">Donec</a>
+            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Donec</a>
             <a href="#" class="card-link">Curabitur nulla</a>
           </div>
           <div class="card-footer text-muted">
@@ -269,12 +282,351 @@
         </div>
 
       </div>
+
     </div>
 
+    <!-- Modal -->
+
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Proin pulvinar mi rutrum</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6">
+                  <h5>In ultrices</h5>
+
+                  <p>In ultrices in nibh eget lacinia. Fusce tristique efficitur quam, sit amet eleifend augue interdum in. 
+                    Maecenas a urna non sem commodo tincidunt. 
+                    Nullam et aliquam augue, sit amet convallis nibh. 
+                    Suspendisse potenti. Aenean dapibus ac nisl et vehicula. Pellentesque quis libero magna. 
+                    Sed nisl leo, mattis sed volutpat vitae, vehicula id dui. 
+                    Aliquam ornare aliquam tellus sit amet iaculis. 
+                    Vivamus erat turpis, condimentum vitae consectetur a, dictum nec ligula. 
+                    Suspendisse egestas ultrices quam nec mollis. Nulla dui neque, maximus sit amet facilisis eget, 
+                    euismod ut erat. Aliquam at lobortis nisl. 
+                    Nulla facilisi. Aliquam a mi nec justo lacinia scelerisque.</p>
+                </div>
+
+                <div class="col-6">
+                  <h5>In ultrices</h5>
+                  
+                  <p>In ultrices in nibh eget lacinia. Fusce tristique efficitur quam, sit amet eleifend augue interdum in. 
+                    Maecenas a urna non sem commodo tincidunt. 
+                    Nullam et aliquam augue, sit amet convallis nibh. 
+                    Suspendisse potenti. Aenean dapibus ac nisl et vehicula. Pellentesque quis libero magna. 
+                    Sed nisl leo, mattis sed volutpat vitae, vehicula id dui. 
+                    Aliquam ornare aliquam tellus sit amet iaculis. 
+                    Vivamus erat turpis, condimentum vitae consectetur a, dictum nec ligula. 
+                    Suspendisse egestas ultrices quam nec mollis. Nulla dui neque, maximus sit amet facilisis eget, 
+                    euismod ut erat. Aliquam at lobortis nisl. 
+                    Nulla facilisi. Aliquam a mi nec justo lacinia scelerisque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron jumbotron-fluid">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-12 text-center">
+
+            <h1 class="display-4"><i class="fab fa-youtube text-danger"></i> Vídeos</h1>
+            <p class="lead">Proin at purus ipsum. Praesent ultrices justo vitae iaculis aliquet. 
+              Vestibulum ullamcorper blandit lorem quis commodo. Ut placerat lobortis nibh a eleifend. 
+              Aenean sollicitudin, sem eget congue consectetur, 
+              lacus metus lacinia mi, et commodo velit odio ac libero. 
+              Pellentesque et dolor tincidunt, luctus tortor at, ornare metus.</p>
+            <hr>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+
+              <li class="nav-item">
+                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Forza Horizon 4</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">FIFA 20</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Modern Warfare</a>
+              </li>
+
+            </ul>
+
+            <div class="tab-content" id="nav-pills-content">
+              <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+               
+                <div class="row">
+                  <div class="col-sm-6">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zJ477xAIlgU"></iframe>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-6">
+
+                    <p class="lead">Trailer do Forza Horizon 4</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+               
+                <div class="row">
+                  <div class="col-sm-6">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vgQNOIhRsV4"></iframe>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-6">
+
+                    <p class="lead">Trailer do FIFA 20</p>
+
+                  </div>
+                </div>
+
+                
+              </div>
+
+              <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+               
+                <div class="row">
+                  <div class="col-sm-6">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bH1lHCirCGI"></iframe>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-6">
+
+                    <p class="lead">Trailer do Call of Duty: Modern Warfare</p>
+
+                  </div>
+                </div>
+
+                
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center my-5">
+
+          <h1 class="display-4"><i class="fa fa-paper-plane text-primary"></i> Formulário</h1>
+
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+
+          <form>
+
+            <div class="form-row">
+              
+              <div class="form-group col-sm-6">
+
+                <label for="inputNome">Seu nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+              </div>
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputSobrenome">Seu sobrenome</label>
+                <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+
+              </div>
+
+            </div>
+            <div class="form-row"></div>
+
+              <div class="form-group col-sm-12">
+
+                <label for="inputEnd">Seu endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço">
+
+              </div>
+            </div>
+            <div class="form-row"></div>
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputCidade">Sua cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+
+              </div>
+
+              <div class="form-group col-sm-4">
+
+                <label for="inputEstado">Seu estado</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha seu estado</option>
+                  <option selected>...</option>
+                  <option selected>...</option>
+                  <option selected>...</option>
+                </select>
+              </div>
+
+              <div class="form-group col-sm-2">
+
+                <label for="inputCEP">Seu CEP</label>
+                <input type="text" class="form-control" id="inputCEP" placeholder="CEP">
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-sm-12">
+
+                <div class="form-check">
+
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Desejo receber novidades via email
+                  </label>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="col-sm-12">
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" 
+                data-placement="right" data-trigger="focus" title="Fusce tristique" 
+                data-content="Proin sit amet dolor dapibus, tincidunt sapien a, varius purus. Nam auctor vel risus eget convallis.">Ajuda</a>
+              </div>
+
+            </div>
+            
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-12 mb-3"><hr></div>
+
+        <div class="col-sm-4">
+
+          <h3>Site do Rodrigo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vestibulum a feugiat quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+          <p>Vivamus sed diam nibh. In non odio non nunc vehicula fringilla. Ut nec dui sem. Mauris nisl diam, tempor nec dictum eget, ornare a velit. </p>
+
+        </div>
+
+        <div class="col-sm-4">
+
+          <h3>Menu</h3>
+          <div class="list-group text-center">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contato</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Jogos</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Teste</a>
+          </div>
+
+        </div>
+
+        <div class="col-sm-4">
+
+          <h3>Social</h3>
+          <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+
+            <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a class="btn btn-outline-warning" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a class="btn btn-outline-success" href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+
+          </div>
+        </div>
+
+        <div class="col-12 mt-5">
+
+          <blockquote class="blockquote text-center">
+
+            <p class="mb-0">Não existe um caminho para a felicidade. A felicidade é o caminho.</p>
+            <footer class="blockquote-footer">Thich Nhat Hanh <cite title="Título">Monge budista, pacifista, escritor e poeta vietnamita</cite></footer>
+
+          </blockquote>
+
+        </div>
+
+      </div>
+      
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+
+      $(function () {
+        
+        $('[data-toggle="popover"]').popover()
+
+      })
+
+    </script>
   </body>
 </html>
